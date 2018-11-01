@@ -1,0 +1,194 @@
+@import "_minix.scss";
+@import "common.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+    background: #efeaed;
+}
+
+header {
+    width: 100%;
+    height: pxTorem(80px);
+    background: #fff;
+    &>p {
+        width: 100%;
+        height: pxTorem(40px);
+        line-height: pxTorem(40px);
+        font-size: pxTorem(18px);
+        color: #e3a6ad;
+        text-align: center;
+    }
+}
+
+.scroll {
+    width: 100%;
+    height: pxTorem(40px);
+    line-height: pxTorem(40px);
+    ul {
+        @include box_flex;
+        position: absolute;
+        li {
+            width: pxTorem(33px);
+            height: pxTorem(32px);
+            margin-left: pxTorem(14px);
+            flex-shrink: 0;
+            text-align: center;
+        }
+    }
+}
+
+.active {
+    color: #e3a6ad;
+    border-bottom: 2px solid #e3a6ad;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    @include flex(1);
+    overflow-y: auto;
+    &>p {
+        width: 100%;
+        height: pxTorem(44px);
+        line-height: pxTorem(44px);
+        text-align: center;
+    }
+}
+
+.title {
+    width: 100%;
+    height: pxTorem(44px);
+    line-height: pxTorem(44px);
+    @include box_flex;
+    padding: 0 pxTorem(15px);
+    @include sizing;
+    @include justify(space-between);
+    h4 {
+        font-size: pxTorem(16px);
+        font-weight: bold;
+    }
+}
+
+.banner {
+    width: 100%;
+    height: pxTorem(200px);
+    background: #fff;
+}
+
+.swiper-slide {
+    width: 100%;
+    @include box_flex;
+    .eve {
+        width: 30%;
+        margin-left: pxTorem(8px);
+        img {
+            width: 100%;
+            margin-top: pxTorem(4px);
+        }
+        h3 {
+            font-size: pxTorem(13px);
+            font-weight: bold;
+            margin-top: pxTorem(4px);
+        }
+        p {
+            width: 100%;
+            margin-top: pxTorem(4px);
+            b {
+                font-size: pxTorem(18px);
+                color: #e3a6ad;
+            }
+            span {
+                color: #ccc;
+            }
+        }
+    }
+}
+
+.pagination {
+    position: absolute;
+    left: 43%!important;
+}
+
+.swiper-pagination-bullet {
+    width: pxTorem(9px)!important;
+    height: pxTorem(9px)!important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #000!important;
+    width: pxTorem(9px)!important;
+    height: pxTorem(9px)!important;
+}
+
+.content {
+    width: 100%;
+    height: pxTorem(100px);
+    @include box_flex;
+    @include flexWrap(wrap);
+}
+
+.cont {
+    width: 45%;
+    margin-left: pxTorem(13px);
+    background: #fff;
+    margin-top: pxTorem(8px);
+    padding: pxTorem(5px);
+    @include sizing;
+    img {
+        width: 100%;
+    }
+    p {
+        width: 100%;
+        height: pxTorem(30px);
+        line-height: pxTorem(30px);
+        margin-bottom: pxTorem(7px);
+        &>span {
+            border: 1px solid #000;
+            padding: pxTorem(3px);
+            margin-right: pxTorem(3px);
+            font-size: pxTorem(12px);
+        }
+    }
+    &>span {
+        display: block;
+        margin-top: pxTorem(10px);
+        margin-left: 66%;
+    }
+}
+
+.price {
+    width: 100%;
+    @include box_flex;
+    @include justify(space-between);
+    h3 {
+        b {
+            font-size: pxTorem(16px);
+            color: red;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: pxTorem(44px);
+    @include box_flex;
+    background: #fff;
+}
+
+.iconfont {
+    font-size: pxTorem(16px)!important;
+}
+
+.icon {
+    width: 20%;
+    @include box_flex;
+    @include direction(column);
+    text-align: center;
+    @include justify(center);
+}
+
+.colors {
+    color: #e3a6ad;
+}
